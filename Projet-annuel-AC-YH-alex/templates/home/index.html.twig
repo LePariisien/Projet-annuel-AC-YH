@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion
+{% endblock %}
+
+{% block body %}
+	{# <style> 
+		/* Changer la couleur du texte en blanc */
+		h1,p,form {
+			color: white;
+		}
+	</style>#}
+{% endblock %}
+{# <section class="container my-3">
+		<div class="row">
+			<div class="col">
+				<h1>Connexion</h1>
+				<p>Bienvenue sur FilesOrganisation</p>
+				<form method="post">
+              		{% if error %}
+                    	<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                	{% endif %}
+					<div class="mb-3">
+						<label for="InputEmail" class="form-label">Adresse mail</label>
+						<input type="email" class="form-control-y-sm" id="InputEmail" aria-describedby="emailHelp">
+					</div>
+					<div class="mb-3">
+						<label for="InputPassword" class="form-label">Mot de passe</label>
+						<input type="password" class="form-control-y-sm" id="InputPassword">
+						<div id="passwordHelp" class="form-text">
+							<p>Votre mot de passe doit comporter entre 8 et 20 caractères, contenir des lettres et des chiffres, et ne doit pas contenir d'espaces, de caractères spéciaux ou d'emoji.</p>
+						</div>
+					</div>
+					<p>
+						<a class="link-opacity-25-hover" href="#">Pas encore inscrit ?</a>
+					</p>
+					<button type="submit" class="btn btn-lg btn-primary mt-3">
+						Me connecter
+					</button>
+				</form>
+			</div>
+		</div>
+	</section> #}
